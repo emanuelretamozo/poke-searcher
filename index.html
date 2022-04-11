@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>¿Quién es ese pokemon?</title>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="input-group" style="display:flex; justify-content:center; line-height: 700px">
+      <div class="form-outline">
+        <input type="search" id="pokemon_search" class="form-control"/>
+        <label class="form-label" for="form1"></label>
+
+      <button onclick="buscar_pokemon()" type="button" class="btn btn-primary">
+        <i class="fas fa-search">Buscar</i>
+      </button>
+    </div>
+      <div id="container"></div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
